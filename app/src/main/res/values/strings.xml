@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">JUST Admission</string>
+    <string name="about_developer">
+        Istiak Zahan\n
+        Session : 2014-15\n
+        Computer Science and Engineering\n
+        Jashore University of Science and Technology\n
+        E-mail : ronniezahan@gmail.com
+    </string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="just">Jashore University of Science and Technology</string>
+</resources>
