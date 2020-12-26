@@ -28,6 +28,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COL_2="roll_from";
     public static final String COL_3="roll_to";
     public static final String COL_4="exam_centre";
+    public static final String COL_5="lat_lng";
 
     public DatabaseHelper(Context context) {
         super(context, DB_NAME, null, 10);

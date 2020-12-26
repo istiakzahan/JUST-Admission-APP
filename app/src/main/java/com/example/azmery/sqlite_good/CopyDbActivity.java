@@ -22,6 +22,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.maps.model.LatLng;
+
 import java.io.IOException;
 
 public class CopyDbActivity extends AppCompatActivity {
@@ -100,6 +102,7 @@ public class CopyDbActivity extends AppCompatActivity {
                         String vall3 = cursor.getString(cursor.getColumnIndex("exam_centre"));
                         String vall4 = cursor.getString(cursor.getColumnIndex("room_no"));
                         String vall5 = cursor.getString(cursor.getColumnIndex("floor_venue"));
+                        String latLng = cursor.getString(cursor.getColumnIndex("lat_lng"));
                        /* Toast.makeText(getApplicationContext(), "your submitted answer is "+vall, Toast.LENGTH_LONG).show();*/
 
                         Intent intent=new Intent(CopyDbActivity.this,Second_Activity.class);
@@ -109,6 +112,7 @@ public class CopyDbActivity extends AppCompatActivity {
                         intent.putExtra("android_room", vall4);
                         intent.putExtra("android_floor", vall5);
                         intent.putExtra("android_roll", roll);
+                        intent.putExtra("lat_lng", latLng);
                         startActivity(intent);
 
 

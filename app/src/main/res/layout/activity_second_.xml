@@ -1,163 +1,184 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Second_Activity">
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Second_Activity">
 
 
-    <TextView
-        android:id="@+id/roll"
-        android:layout_width="79dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="60dp"
-        android:text="Roll : "
-        android:textColor="#3F51B5"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/roll"
+            android:layout_width="79dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="60dp"
+            android:text="Roll : "
+            android:textColor="#3F51B5"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textViewRoll"
-        android:layout_width="221dp"
-        android:layout_height="32dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="62dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/roll"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textViewRoll"
+            android:layout_width="221dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="62dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/roll"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/unit"
-        android:layout_width="65dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
-        android:text="Unit : "
-        android:textColor="#3F51B5"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/roll" />
+        <TextView
+            android:id="@+id/unit"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="32dp"
+            android:text="Unit : "
+            android:textColor="#3F51B5"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/roll" />
 
-    <TextView
-        android:id="@+id/textViewUnit"
-        android:layout_width="217dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="34dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/unit"
-        app:layout_constraintTop_toBottomOf="@+id/textViewRoll" />
+        <TextView
+            android:id="@+id/textViewUnit"
+            android:layout_width="217dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="34dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/unit"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRoll" />
 
-    <TextView
-        android:id="@+id/center"
-        android:layout_width="76dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:text="Center : "
-        android:textColor="#3F51B5"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/unit" />
+        <TextView
+            android:id="@+id/center"
+            android:layout_width="76dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="Center : "
+            android:textColor="#3F51B5"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/unit" />
 
-    <TextView
-        android:id="@+id/textViewCenter"
-        android:layout_width="213dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="30dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/center"
-        app:layout_constraintTop_toBottomOf="@+id/textViewUnit" />
+        <TextView
+            android:id="@+id/textViewCenter"
+            android:layout_width="213dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="30dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/center"
+            app:layout_constraintTop_toBottomOf="@+id/textViewUnit" />
 
-    <TextView
-        android:id="@+id/building"
-        android:layout_width="82dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:text="Building :"
-        android:textColor="#3F51B5"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/center" />
+        <TextView
+            android:id="@+id/building"
+            android:layout_width="82dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="Building :"
+            android:textColor="#3F51B5"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/center" />
 
-    <TextView
-        android:id="@+id/textViewBuilding"
-        android:layout_width="212dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/building"
-        app:layout_constraintTop_toBottomOf="@+id/textViewCenter" />
+        <TextView
+            android:id="@+id/textViewBuilding"
+            android:layout_width="212dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/building"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCenter" />
 
-    <TextView
-        android:id="@+id/floor"
-        android:layout_width="71dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:text="Floor :"
-        android:textColor="#3F51B5"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/building" />
+        <TextView
+            android:id="@+id/floor"
+            android:layout_width="71dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="Floor :"
+            android:textColor="#3F51B5"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/building" />
 
-    <TextView
-        android:id="@+id/textViewFloor"
-        android:layout_width="210dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/floor"
-        app:layout_constraintTop_toBottomOf="@+id/textViewBuilding" />
-
-
-    <TextView
-        android:id="@+id/room"
-        android:layout_width="71dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="28dp"
-        android:text="Room :"
-        android:textColor="#3F51B5"
-        android:textSize="18dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/floor" />
-
-    <TextView
-        android:id="@+id/textViewRoom"
-        android:layout_width="210dp"
-        android:layout_height="42dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
-        android:textColor="#000"
-        android:textSize="16dp"
-        app:layout_constraintStart_toEndOf="@+id/room"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFloor" />
+        <TextView
+            android:id="@+id/textViewFloor"
+            android:layout_width="210dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/floor"
+            app:layout_constraintTop_toBottomOf="@+id/textViewBuilding" />
 
 
-</android.support.constraint.ConstraintLayout>
+        <TextView
+            android:id="@+id/room"
+            android:layout_width="71dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="28dp"
+            android:text="Room :"
+            android:textColor="#3F51B5"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/floor" />
+
+        <TextView
+            android:id="@+id/textViewRoom"
+            android:layout_width="210dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/room"
+            app:layout_constraintTop_toBottomOf="@+id/textViewFloor" />
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRoom"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

@@ -16,8 +16,6 @@ import android.widget.Button;
 
 public class WelcomeActivity extends AppCompatActivity {
 
-    private DrawerLayout drawer;
-    private ActionBarDrawerToggle toggle;
     Button seatPlan;
 
     @Override
@@ -25,7 +23,7 @@ public class WelcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        seatPlan=findViewById(R.id.seat_plan);
+        seatPlan = findViewById(R.id.seat_plan);
         seatPlan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,71 +31,24 @@ public class WelcomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        drawer = (DrawerLayout) findViewById(R.id.drawer);
-        toggle = new ActionBarDrawerToggle(this, drawer,R.string.open,R.string.close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        NavigationView navigationView=(NavigationView) findViewById(R.id.menu_navigation);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.map:
-                        Intent intent=new Intent(WelcomeActivity.this, MapActivity.class);
-                        startActivity(intent);
-                        return true;
-                }
-                return false;
-            }
-        });
 
-
-        drawer.addDrawerListener(
-                new DrawerLayout.DrawerListener() {
-                    @Override
-                    public void onDrawerSlide(@NonNull View drawerView, float slideOffset) {
-
-                    }
-
-                    @Override
-                    public void onDrawerOpened(@NonNull View drawerView) {
-
-                    }
-
-                    @Override
-                    public void onDrawerClosed(@NonNull View drawerView) {
-                        Intent intent=new Intent(WelcomeActivity.this, MapActivity.class);
-                        startActivity(intent);
-                    }
-
-                    @Override
-                    public void onDrawerStateChanged(int newState) {
-
-                    }
-                }
-        );
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater=getMenuInflater();
-        inflater.inflate(R.menu.about_menu,menu);
+        inflater.inflate(R.menu.about_menu, menu);
         return true;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (toggle.onOptionsItemSelected(item)) {
-            return true;
-        }
         switch (item.getItemId()) {
             case R.id.about:
                 Intent intent=new Intent(WelcomeActivity.this, AboutActivity.class);
                 startActivity(intent);
+                default:
+                    return super.onOptionsItemSelected(item);
         }
-        return toggle.onOptionsItemSelected(item);
     }
-
-
 }
